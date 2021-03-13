@@ -22,7 +22,6 @@
 .phonesection > .sideimage{
     grid-column: 2;
     align-self: stretch;
-    width: 100%;
     border: 1px solid black;
     background-image: url("macbook.jpg");
     background-repeat: no-repeat;
@@ -79,4 +78,42 @@
 
 .content .salepointblock:nth-child(1){
     margin-top: 30px;
+}
+
+@media only screen and (max-width: 1200px){
+    .salepointblock .ruitcontainer{
+        right: auto;
+        left: calc(150px + 45vw);
+    }
+
+    .salepointblock p{
+        max-width: 490px;
+    }
+
+    .phonesection{
+        grid-template-columns: 1fr 0px;
+    }    
+
+    .phonesection .content{
+        width: auto;
+    }
+
+    .phonesection > .sideimage{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 690px){
+    .salepointblock{
+        margin-left: 30px;
+    }
+
+    .salepointblock .ruitcontainer{
+        left: 400px;
+    }
+
+    .salepointblock p{
+        max-width: 350px;
+    }
 }
