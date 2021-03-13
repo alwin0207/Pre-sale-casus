@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="130mm"
+   height="150mm"
+   viewBox="0 0 130 150"
+   version="1.1"
+   id="svg1187"
+   inkscape:version="1.0beta2 (2b71d25, 2019-12-03)"
+   sodipodi:docname="bars.svg">
+  <defs
+     id="defs1181" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.42473318"
+     inkscape:cx="377.06243"
+     inkscape:cy="449.92646"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="794"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata1184">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Laag 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="matrix(1.4275428,0,0,1.4275428,-56.485819,-65.503006)"
+       id="g236">
+      <rect
+         ry="2.7226191"
+         rx="1.4286133"
+         y="77.001038"
+         x="74.459869"
+         height="68.009132"
+         width="22.679222"
+         id="rect1189"
+         style="fill:#ff7f2a;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.321839;stroke-linecap:round;stroke-linejoin:bevel;stroke-dashoffset:7.55907" />
+      <rect
+         style="fill:#999999;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.371659;stroke-linecap:round;stroke-linejoin:bevel;stroke-dashoffset:7.55907"
+         id="rect1191"
+         width="22.679222"
+         height="90.693909"
+         x="103.56406"
+         y="54.316261"
+         rx="1.4286133"
+         ry="3.6307619" />
+      <rect
+         ry="1.7933567"
+         rx="1.4286133"
+         y="100.21337"
+         x="44.8265"
+         height="44.796803"
+         width="22.679222"
+         id="rect1193"
+         style="fill:#999999;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.261204;stroke-linecap:round;stroke-linejoin:bevel;stroke-dashoffset:7.55907" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,61 @@
+.infosection{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.infosection > .content{
+    grid-column: 1;
+    grid-row: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.infosection > img{
+    grid-column: 2;
+    grid-row: 1;
+
+
+}
+
+.infosection > .content h1{
+    margin-left: 50px;
+    margin-bottom: 5px;
+    
+    font-size: 41px;
+
+    color:orange;
+}
+
+.infosection > .content > hr{
+    width: 90px;
+    margin: 0px 0px 0px 50px;
+    border-top: 2px solid rgb(119, 119, 119);
+}
+
+.infosection > .content p{
+    margin-left: 50px;
+    
+    font-size: 16px;
+
+    color:grey;
+}
+
+.infosection > .content a{
+    display: block;
+    text-decoration: none;
+    width: max-content;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 20px 50px;
+    border-radius: 10px;
+
+    font-size: 30px;
+
+    background-color: orange;
+    color: white;
+}
