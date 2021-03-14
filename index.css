@@ -6,6 +6,8 @@
     --subcartTopTCol: white;
 
     --leftRightMarginBestelButton: 70px;
+
+    --button-hover-bcolor: #414141;
 }
 
 body{
@@ -25,6 +27,10 @@ a, button{
 
     background-color: orange;
     color: black;
+}
+
+a:hover, button:hover{
+    background-color: #414141;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, button{
@@ -144,6 +150,11 @@ Subscription Cards
 
 .subscriptioncard:nth-last-child(1) a{
     background-color: rgb(169, 169, 169);
+}
+
+.subscriptioncard:hover .subcart_bottom a{
+    background-color: var(--button-hover-bcolor);
+    cursor: pointer;
 }
 /*///////////////////////////////////////
 Contact form
@@ -437,6 +448,11 @@ nav a{
     color: darkgray;
 }
 
+nav a:hover{
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 .navlogo{
     display: flex;
     justify-content: space-around;
@@ -447,7 +463,7 @@ nav a{
     left: calc(50vw - 60px);
     height: 120px;
     width: 120px;
-    z-index: 9;
+    z-index: 19;
 
     border-radius: 50%;
 
@@ -536,6 +552,10 @@ About (infosection)
 
     background-color: orange;
     color: white;
+}
+
+.infosection > .content a:hover{
+    background-color: var(--button-hover-bcolor);
 }
 
 /*///////////////////////////////////////
@@ -770,6 +790,10 @@ Media queries
     .infosection > .content > a, .infosection > .content > h1, .infosection > .content > p, .infosection > .content > hr{
         margin: 10px 30px;
         text-align: center;
+    }
+
+    .infosection > .content > a{
+        margin-bottom: 40px;
     }
 
     .infosection > .content > hr{
