@@ -9,9 +9,10 @@
 }
 
 body{
+    position: relative;
     padding: 0px;
     margin: 0px;
-    position: relative;
+    
     background-color: #fbfbfb;
 }
 
@@ -33,6 +34,13 @@ h1, h2, h3, h4, h5, h6, p, a, button{
 /*///////////////////////////////////////
 Subscription Cards
 ///////////////////////////////////////*/
+
+.carddisplay{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
 .subscriptioncard{
     display: grid;
@@ -78,7 +86,7 @@ Subscription Cards
 
     -moz-background-clip: padding; 
     -webkit-background-clip: padding; 
-    background-clip: padding-box; 
+    background-clip: padding; 
 
     background-color: white;
 }
@@ -106,9 +114,9 @@ Subscription Cards
 .subcart_bottom p{
     margin: 130px 30px 0px 30px;
 
+    text-align: center;
     font-size: 16px;
     font-weight: normal;
-    text-align: center;
 
     color: darkslategrey;
 }
@@ -117,6 +125,7 @@ Subscription Cards
     display: flex;
     align-items: center;
     justify-content: center;
+
     position: absolute;
     bottom: 30px;
     left: var(--leftRightMarginBestelButton);
@@ -175,7 +184,7 @@ Contact form
 }
 
 /*///////////////////////////////////////
-Ruit container
+Ruit section
 ///////////////////////////////////////*/
 
 .ruitsection{
@@ -200,9 +209,11 @@ Ruit container
 }
 
 .ruitcard h1{
+    max-width: 220px;
+
     margin-top: 40px;
     margin-bottom: 6px;
-    max-width: 220px;
+    
     text-align: center;
     color: rgb(109, 109, 109);
 }
@@ -289,15 +300,10 @@ Section type B
     color: #6e6e6e;
 }
 
-.carddisplay{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    /* padding: 40px; */
-    flex-wrap: wrap;
-}
 
-
+/*///////////////////////////////////////
+Hero image
+///////////////////////////////////////*/
 
 
 .hero_polygon{
@@ -317,7 +323,6 @@ Section type B
 }
 
 .hero_polygon img{
-    
     position: absolute;
     
     z-index: -3;
@@ -332,21 +337,23 @@ Section type B
 }
 
 .hero_polygon h1{
-    font-size: 80px;
-    font-family: serif;
-    color: white;
-
-
-    text-align: center;
     margin-top: 200px;
     margin-bottom: 0px;
+
+    text-align: center;
+    font-size: 80px;
     line-height: .9em;
+    font-family: serif;
+
+    color: white;
 }
+
 .hero_polygon h2{
+    margin-top: 20px;
+
+    text-align: center;
     font-size: 20px;
     font-family: serif;
-    margin-top: 20px;
-    text-align: center;
 
     color: white;
 }
@@ -355,28 +362,34 @@ Section type B
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 70%;
     justify-content: space-evenly;
+    
+    width: 70%;
+
     margin-top: 100px;
 }
 
 .hero_polygon a{
-    padding: 20px 0px;
     width: 300px;
-    text-align: center;
-    text-justify: center;
-
+    padding: 20px 0px;
     margin-top: 30px;
 
+    text-align: center;
+    text-justify: center;
     font-size: 28px;
     font-weight: bold;
+
     color: white;
 }
 
 .buttonspace a:nth-child(2){
-    background-color: rgba(255, 140, 0, 0);
     border: 2px solid white;
+    background-color: rgba(255, 140, 0, 0);
 }
+
+/*///////////////////////////////////////
+Navbar
+///////////////////////////////////////*/
 
 nav{
     position: sticky;
@@ -384,8 +397,9 @@ nav{
     left: 0px;
     height: 50px;
     width: 100vw;
-    background-color: white;
     z-index: 6;
+    
+    background-color: white;
 }
 
 nav .prebox{
@@ -398,6 +412,7 @@ nav .prebox{
 
     margin-left: 40px;
 }
+
 nav .postbox{
     float: right;
     display: flex;
@@ -405,15 +420,17 @@ nav .postbox{
     justify-content: space-around;
     height: 100%;
     width: 40vw;
+
     margin-right: 40px;
 }
 
 nav a{
     height: auto;
     width: auto;
-    padding: none;
     text-align: center;
 
+    padding: none;
+    
     font-size: 20px;
     
     background-color: rgba(255, 255, 255, 0);
@@ -422,23 +439,362 @@ nav a{
 
 .navlogo{
     display: flex;
-    color: black;
     justify-content: space-around;
     align-items: center;
-    height: 120px;
-    width: 120px;
+
+    position: absolute;
     top: 0px;
     left: calc(50vw - 60px);
+    height: 120px;
+    width: 120px;
     z-index: 9;
-    background-color: white;
+
     border-radius: 50%;
-    position: absolute;
+
+    background-color: white;
+    color: black;  
 }
 
 .navlogo h1{
     height: max-content;
+
     font-family: serif;
     font-size: 60px;
     font-weight: bold;
+
     color: #0e0e0e;
+}
+
+/*///////////////////////////////////////
+About (infosection)
+///////////////////////////////////////*/
+
+.infosection{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.infosection > .content{
+    grid-column: 1;
+    grid-row: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.infosection > img{
+    grid-column: 2;
+    grid-row: 1;
+
+    height: 660px;
+    width: 1120px;
+
+    transform: translateX(-70px);
+    transform: translateY(-25px);
+}
+
+.infosection > .content h1{
+    margin-left: 50px;
+    margin-bottom: 5px;
+    
+    font-size: 41px;
+
+    color:orange;
+}
+
+.infosection > .content > hr{
+    width: 90px;
+    margin: 0px 0px 20px 50px;
+    border-top: 2px solid rgb(119, 119, 119);
+}
+
+.infosection > .content p{
+    margin-left: 50px;
+    
+    line-height: 1.55rem;
+    font-size: 16px;
+
+    color:grey;
+}
+
+.infosection > .content a{
+    display: block;
+    text-decoration: none;
+    width: max-content;
+
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    padding: 20px 50px;
+    border-radius: 10px;
+
+    font-size: 30px;
+
+    background-color: orange;
+    color: white;
+}
+
+/*///////////////////////////////////////
+Uitleg (phonesection)
+///////////////////////////////////////*/
+
+.phonesection{
+    display: grid;
+    column-gap: 0px;
+    grid-template-columns: 671px 1fr;
+    width: 100%;
+}
+
+.phonesection > .content{
+    grid-column: 1;
+    grid-row: 1;
+
+    height: max-content;
+    width: 670px;
+
+    padding: 0px 0px 40px 0px;
+    border: 1px solid black;
+    border-right: 0px;
+
+    background-color: #414141;
+}
+
+.phonesection > .sideimage{
+    grid-column: 2;
+    align-self: stretch;
+
+    border: 1px solid black;
+
+    background-image: url("macbook.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sideimage > .shader{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.299);
+}
+
+.salepointblock{
+    display: block;
+    position: relative;
+    width: calc(100% - 100px);
+
+    margin-top: 80px;
+    margin-left: 100px;
+}
+
+.salepointblock .ruitcontainer{
+    position: absolute;
+    top: 20px;
+    right: -52px;
+    z-index: 2;
+    height: 100px;
+    width: 100px;
+
+    background-color: white;
+}
+
+.salepointblock h1, .salepointblock h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: orange;
+}
+
+.salepointblock h1{
+    margin-bottom: 5px;
+}
+
+.salepointblock hr{
+    max-width: 70px;
+    margin: 0px;
+    border-top: 1px solid rgb(126, 126, 126);
+}
+
+.salepointblock p{
+    margin-right: 80px;
+
+    font-size: 20px;
+    font-weight: normal;
+
+    color: lightgray;
+}
+
+.content .salepointblock:nth-child(1){
+    margin-top: 30px;
+}
+
+/*///////////////////////////////////////
+Footer
+///////////////////////////////////////*/
+
+footer{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 80px;
+    background-color: #1e1e1e;
+}
+
+footer a{
+    display: block;
+    text-decoration: none;
+    justify-self: left;
+    height: 40px;
+    width: 40px;
+
+    margin-left: 20px;
+
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+footer p{
+    flex-grow: 1;
+    margin: 0px 10vw 0px 0px;
+    text-align: end;
+    color: white;
+}
+
+footer span {
+    display: inline-block;
+}
+
+footer .facebooklink{
+    background-image: url("facebook.png");
+    filter: invert();
+    margin-left: 10vw;
+}
+
+footer .twitterlink{
+    background-image: url("twitter.png");
+    filter: invert();
+}
+
+
+
+
+/*///////////////////////////////////////
+Media queries
+///////////////////////////////////////*/
+
+@media only screen and (max-width: 1200px){
+
+    /*---- Phonesection ----*/
+
+    .phonesection{
+        grid-template-columns: 1fr 0px;
+    }    
+
+    .phonesection .content{
+        width: auto;
+    }
+
+    .phonesection > .sideimage{
+        display: none;
+    }
+
+    .salepointblock .ruitcontainer{
+        right: auto;
+        left: calc(150px + 45vw);
+    }
+
+    .salepointblock p{
+        max-width: 490px;
+    }
+
+}
+
+@media only screen and (max-width: 690px){
+
+    /*---- Navbar ----*/
+
+    nav {
+        position: fixed;
+    }
+    
+    nav .prebox{
+        margin-left: 0px;
+        width: 50vw;
+    }
+
+    nav .postbox{
+        margin-right: 0px;
+        width: 50vw;
+    }
+
+    .navlogo{
+        display: none;
+    }
+
+    /*---- Phonesection ----*/
+
+    .salepointblock .ruitcontainer{
+        display: none;
+    }
+
+    .salepointblock{
+        margin-top: 40px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .salepointblock p{
+        max-width: 100%;
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: center;
+    }
+
+    /*---- Phonesection ----*/
+
+    .infosection > .content{
+        align-items: center;
+    }
+
+    .infosection > img{
+        display: none;
+    }
+
+    .infosection > .content > *{
+        margin: 10px 40px;
+        text-align: center;
+    }
+
+    .infosection > .content > hr{
+        margin: 10px 40px;
+        width: 150px;
+    }
+
+    .infosection{
+        grid-template-columns: 1fr;
+    }
+
+    /*---- Hero image ----*/
+
+    .hero_polygon .buttonspace{
+        margin-top: 40px;
+    }
+
+    .hero_polygon .buttonspace a{
+        margin-top: 10px;
+    }
+
+    /*---- Subscription cards ----*/
+
+    .subscriptioncard{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
