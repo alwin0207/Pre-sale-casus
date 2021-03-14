@@ -117,7 +117,7 @@ Subscription Cards
     bottom: 30px;
     left: var(--leftRightMarginBestelButton);
     height: 50px;
-    width: calc(350px - calc(2*var(--leftRightMarginBestelButton)));
+    width: calc(100% - calc(2*var(--leftRightMarginBestelButton)));
 
     font-size: 23px;
     font-weight: bold;
@@ -138,6 +138,7 @@ Contact form
 
 .contactform > input{
     width: 350px;
+    max-width: 90vw;
     
     padding: 10px 5px;
     margin-top: 10px;
@@ -326,6 +327,7 @@ Section type B
     text-align: center;
     margin-top: 200px;
     margin-bottom: 0px;
+    line-height: .9em;
 }
 .hero_polygon h2{
     font-size: 20px;
