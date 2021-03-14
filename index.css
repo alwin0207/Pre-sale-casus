@@ -767,8 +767,8 @@ Media queries
         display: none;
     }
 
-    .infosection > .content > *{
-        margin: 10px 40px;
+    .infosection > .content > a, .infosection > .content > h1, .infosection > .content > p, .infosection > .content > hr{
+        margin: 10px 30px;
         text-align: center;
     }
 
