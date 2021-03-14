@@ -26,6 +26,10 @@ a, button{
     color: black;
 }
 
+h1, h2, h3, h4, h5, h6, p, a, button{
+    font-family: sans-serif;
+}
+
 /*///////////////////////////////////////
 Subscription Cards
 ///////////////////////////////////////*/
@@ -39,7 +43,7 @@ Subscription Cards
     overflow: hidden;
 
     height: 700px;
-    width: 350px;
+    width: 420px;
 
     margin-top: 40px;
     margin-left: 40px;
@@ -96,7 +100,7 @@ Subscription Cards
     position: relative;
     z-index: -1;
 
-    background-color: lightgray;
+    background-color: rgb(240, 240, 240);
 }
 
 .subcart_bottom p{
@@ -125,6 +129,13 @@ Subscription Cards
     color: white;
 }
 
+.subscriptioncard:nth-last-child(1) .subcart_top{
+    background-color: rgb(169, 169, 169);
+}
+
+.subscriptioncard:nth-last-child(1) a{
+    background-color: rgb(169, 169, 169);
+}
 /*///////////////////////////////////////
 Contact form
 ///////////////////////////////////////*/
@@ -138,7 +149,7 @@ Contact form
 
 .contactform > input{
     width: 350px;
-    max-width: 90vw;
+    max-width: 85vw;
     
     padding: 10px 5px;
     margin-top: 10px;
@@ -185,15 +196,15 @@ Ruit container
     margin-right: 100px;
 
     width: max-content;
-    height: 600px;
+    height: 520px;
 }
 
 .ruitcard h1{
     margin-top: 40px;
     margin-bottom: 6px;
-    max-width: 190px;
+    max-width: 220px;
     text-align: center;
-    color: gray;
+    color: rgb(109, 109, 109);
 }
 
 .ruitcard p{
@@ -202,8 +213,8 @@ Ruit container
     margin-top: 6px;
 
     text-align: center;
-    font-size: 25px;
-    color: lightgrey;
+    font-size: 20px;
+    color: rgb(181, 181, 181);
 
 }
 
@@ -322,7 +333,9 @@ Section type B
 
 .hero_polygon h1{
     font-size: 80px;
+    font-family: serif;
     color: white;
+
 
     text-align: center;
     margin-top: 200px;
@@ -331,6 +344,7 @@ Section type B
 }
 .hero_polygon h2{
     font-size: 20px;
+    font-family: serif;
     margin-top: 20px;
     text-align: center;
 
@@ -407,12 +421,24 @@ nav a{
 }
 
 .navlogo{
+    display: flex;
+    color: black;
+    justify-content: space-around;
+    align-items: center;
     height: 120px;
     width: 120px;
     top: 0px;
     left: calc(50vw - 60px);
-    z-index: 4;
+    z-index: 9;
     background-color: white;
     border-radius: 50%;
     position: absolute;
+}
+
+.navlogo h1{
+    height: max-content;
+    font-family: serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #0e0e0e;
 }

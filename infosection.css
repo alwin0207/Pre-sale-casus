@@ -18,6 +18,12 @@
 .infosection > img{
     grid-column: 2;
     grid-row: 1;
+
+    height: 660px;
+    width: 1120px;
+
+    transform: translateX(-70px);
+    transform: translateY(-25px);
 }
 
 .infosection > .content h1{
@@ -31,13 +37,14 @@
 
 .infosection > .content > hr{
     width: 90px;
-    margin: 0px 0px 0px 50px;
+    margin: 0px 0px 20px 50px;
     border-top: 2px solid rgb(119, 119, 119);
 }
 
 .infosection > .content p{
     margin-left: 50px;
     
+    line-height: 1.55rem;
     font-size: 16px;
 
     color:grey;
@@ -47,7 +54,7 @@
     display: block;
     text-decoration: none;
     width: max-content;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 50px;
     margin-bottom: 40px;
     padding: 20px 50px;
@@ -88,5 +95,10 @@
 
     .hero_polygon .buttonspace a{
         margin-top: 10px;
+    }
+
+    .subscriptioncard{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }

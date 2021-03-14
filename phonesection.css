@@ -120,6 +120,10 @@
 
 @media only screen and (max-width: 690px){
 
+    nav {
+        position: fixed;
+    }
+    
     nav .prebox{
         margin-left: 0px;
         width: 50vw;
@@ -139,6 +143,7 @@
     }
 
     .salepointblock{
+        margin-top: 40px;
         margin-left: 0px;
         display: flex;
         flex-direction: column;
